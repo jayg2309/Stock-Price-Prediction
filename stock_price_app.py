@@ -1,10 +1,20 @@
+# Import necessary libraries for data manipulation, visualization, and machine learning
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import yfinance as yf
+# Import libraries for machine learning
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.linear_model import LinearRegression
+
+# Import Streamlit for creating the web app
+import streamlit as st
+
+# Title of the web app
+st.title('Stock Price Prediction')
+
+
 
 
 def download_stock_data(ticker, start_date, end_date):
